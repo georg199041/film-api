@@ -1,0 +1,23 @@
+{
+  "name": "film-api",
+  "version": "0.0.0",
+  "description": "Example hapi-backed API serivce with testing and CI.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "NODE_ENV=test node node_modules/lab/bin/lab -v -L -C -D -c -t 85",
+    "test-cov-html": "lab -r html -o coverage.html"
+  },
+  "dependencies": {
+    "hapi": "^14.1.0",
+    "hapi-swagger": "^6.2.1",
+    "inert": "^4.0.1",
+    "joi": "^9.0.4",
+    "promise": "^7.1.1",
+    "vision": "^4.1.0"
+  },
+  "devDependencies": {
+    "code": "^3.0.1",
+    "lab": "^10.9.0"
+  }
+}
